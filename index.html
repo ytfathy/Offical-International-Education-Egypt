@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>International Education Egypt</title>
+<meta name="description" content="International Education Egypt creates interactive digital learning programs for Grade 6 and Grade 8 international school students: Mathematics, Science, English, Social Studies, German and Arabic.">
+<meta name="theme-color" content="#071A45">
+<meta property="og:title" content="International Education Egypt — Interactive learning programs">
+<meta property="og:description" content="Interactive educational programs for Grade 6 and Grade 8 that turn studying into an engaging, personalized experience.">
+<meta property="og:image" content="assets/iee-logo.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Readex+Pro:wght@500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <img src="assets/iee-logo.png" alt="" width="120" height="120">
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="top">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="International Education Egypt — Home">
+      <img src="assets/iee-logo.png" alt="International Education Egypt logo" width="52" height="52">
+      <span class="brand-txt"><b>International Education</b><small>Egypt</small></span>
+    </a>
+    <nav class="links" id="navLinks" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#programs">Our Programs</a>
+      <a href="#grade-6" data-grade-link="g6">Grade 6</a>
+      <a href="#grade-8" data-grade-link="g8">Grade 8</a>
+      <a href="#features">Features</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a class="btn btn-wa nav-wa-m" data-wa="general" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </nav>
+    <a class="btn btn-wa nav-wa" data-wa="general" href="#" target="_blank" rel="noopener">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="grid-lines"></i></div>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="hero-kicker"><span class="dots" id="heroDots"></span>Interactive programs for Grade 6 &amp; Grade 8</p>
+      <h1>Reimagining the Way Students Learn.</h1>
+      <p class="lead">Discover a smarter way to study with interactive educational programs designed to transform learning into an engaging, personalized experience.</p>
+      <p class="ar" lang="ar" dir="rtl">التعليم مش مجرد مذاكرة... دي تجربة تعلم متكاملة.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="#programs">Explore Our Programs
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost btn-lg" href="#contact">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="stage" id="stage" aria-hidden="true">
+      <div class="device" data-depth="10">
+        <div class="dev-bar"><i></i><i></i><i></i></div>
+        <div class="dev-body">
+          <div class="dev-q">
+            <p class="dev-label">Question 3 of 8</p>
+            <p class="dev-question">Which fraction is equal to 0.75?</p>
+            <div class="dev-opts">
+              <span>2/3</span><span class="ok">3/4 <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>4/5</span><span>7/10</span>
+            </div>
+            <p class="dev-fb">Correct! 0.75 = 75/100 = 3/4</p>
+          </div>
+          <div class="dev-side">
+            <svg class="ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" class="ring-bg"/><circle cx="60" cy="60" r="50" class="ring-fg"/></svg>
+            <p class="ring-lbl">Lesson<br>progress</p>
+            <div class="bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:52%"></i><i style="--h:80%"></i><i style="--h:92%"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="float f-math" data-depth="26"><svg viewBox="0 0 64 64"><use href="#sub-math"/></svg><span>Mathematics</span></div>
+      <div class="float f-sci" data-depth="34"><svg viewBox="0 0 64 64"><use href="#sub-science"/></svg><span>Science</span></div>
+      <div class="float f-eng" data-depth="20"><svg viewBox="0 0 64 64"><use href="#sub-arsocial"/></svg><span>Social Studies</span></div>
+      <div class="float f-ar" data-depth="30"><svg viewBox="0 0 64 64"><use href="#sub-arabic"/></svg><span>Arabic</span></div>
+      <div class="float f-badge" data-depth="40"><b>+10</b> XP<small>Quiz completed</small></div>
+    </div>
+  </div>
+  <div class="hero-strip" id="heroStrip"></div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section class="programs band" id="programs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>Our educational programs</h2>
+        <p class="sub">Six subjects for each grade, each with its own interactive program. Choose a subject to compare, watch the video, or open the full program.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter by subject" id="subjectFilters"></div>
+    </div>
+
+    <div class="grade-block" id="grade-6">
+      <div class="grade-head">
+        <h3><span class="g-num">6</span>Grade 6 programs</h3>
+        <div class="rail-ctrl"><button class="arrow" data-rail="g6" data-dir="-1" aria-label="Previous Grade 6 programs">‹</button><button class="arrow" data-rail="g6" data-dir="1" aria-label="Next Grade 6 programs">›</button></div>
+      </div>
+      <div class="rail" id="rail-g6" tabindex="0" aria-label="Grade 6 programs"></div>
+    </div>
+
+    <div class="grade-block" id="grade-8">
+      <div class="grade-head">
+        <h3><span class="g-num">8</span>Grade 8 programs</h3>
+        <div class="rail-ctrl"><button class="arrow" data-rail="g8" data-dir="-1" aria-label="Previous Grade 8 programs">‹</button><button class="arrow" data-rail="g8" data-dir="1" aria-label="Next Grade 8 programs">›</button></div>
+      </div>
+      <div class="rail" id="rail-g8" tabindex="0" aria-label="Grade 8 programs"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features band" id="features">
+  <div class="wrap feat-grid">
+    <div class="feat-copy">
+      <h2>How learning feels inside a program</h2>
+      <p class="sub">Every program is built around doing, not just reading. Try the sample question to see answer correction and feedback in action.</p>
+      <div class="demo" id="demo">
+        <div class="demo-top"><span>Sample interaction</span><span class="demo-score" id="demoScore">0 / 3</span></div>
+        <div class="demo-prog"><i id="demoBar"></i></div>
+        <p class="demo-q" id="demoQ"></p>
+        <div class="demo-opts" id="demoOpts"></div>
+        <p class="demo-fb" id="demoFb" role="status" aria-live="polite"></p>
+        <button class="btn btn-primary demo-next" id="demoNext" hidden>Next question</button>
+      </div>
+    </div>
+    <ul class="feat-list" id="featList"></ul>
+  </div>
+</section>
+
+<!-- ============ WHY IEE / ABOUT ============ -->
+<section class="why band" id="about">
+  <div class="wrap">
+    <div class="why-top">
+      <h2>More Than Studying. A Complete Learning Experience.</h2>
+      <p class="sub">International Education Egypt is an educational technology company creating interactive digital learning programs for international school students, built to make studying clearer, more active and more rewarding.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="pillars">
+      <article><svg viewBox="0 0 48 48"><use href="#pl-structure"/></svg><h3>Structured educational content</h3><p>Lessons follow a clear order so each idea builds on the last.</p></article>
+      <article><svg viewBox="0 0 48 48"><use href="#pl-touch"/></svg><h3>Interactive learning experiences</h3><p>Students take part in every lesson rather than watching from the side.</p></article>
+      <article><svg viewBox="0 0 48 48"><use href="#pl-eye"/></svg><h3>Engaging visual explanations</h3><p>Diagrams and motion make difficult ideas easier to picture.</p></article>
+      <article><svg viewBox="0 0 48 48"><use href="#pl-practice"/></svg><h3>Practice-based learning</h3><p>Understanding grows through regular, well-designed practice.</p></article>
+      <article><svg viewBox="0 0 48 48"><use href="#pl-tech"/></svg><h3>Technology-enhanced education</h3><p>Digital tools add feedback and structure that paper can't.</p></article>
+      <article><svg viewBox="0 0 48 48"><use href="#pl-student"/></svg><h3>Designed around students' needs</h3><p>Clear screens and steady pacing that students can follow on their own.</p></article>
+    </div>
+    <div class="testis" id="testimonials"></div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how band" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <svg class="steps-line" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M60 20 C 250 -10, 330 50, 500 20 S 760 -10, 940 20"/></svg>
+      <ol>
+        <li><span class="st-ic"><svg viewBox="0 0 48 48"><use href="#st-choose"/></svg></span><span class="st-n">Step 1</span><h3>Choose your program</h3><p>Pick the grade and subject that fit your child, then message us on WhatsApp.</p></li>
+        <li><span class="st-ic"><svg viewBox="0 0 48 48"><use href="#st-access"/></svg></span><span class="st-n">Step 2</span><h3>Access your interactive learning experience</h3><p>Receive access to the program and start the first lesson.</p></li>
+        <li><span class="st-ic"><svg viewBox="0 0 48 48"><use href="#st-grow"/></svg></span><span class="st-n">Step 3</span><h3>Learn, practice, and improve</h3><p>Work through lessons, answer questions and build confidence over time.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO SHOWCASE ============ -->
+<section class="videos band" id="videos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>See Learning in Action</h2>
+        <p class="sub">Watch a short promotional video for each program.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter videos by grade" id="videoFilters"></div>
+    </div>
+    <div class="vgrid" id="videoGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact band" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <h2>Talk to us on WhatsApp</h2>
+      <p class="sub">Ask about any program, request a demo, or get access to an app. Choose a program and we'll prepare your message for you.</p>
+      <a class="btn btn-wa btn-lg" data-wa="general" href="#" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wa"/></svg>Start a WhatsApp chat</a>
+      <p class="wa-num" id="waNumber"></p>
+    </div>
+    <form class="ask" id="askForm" novalidate>
+      <h3>Ask about a program</h3>
+      <div class="row2">
+        <label for="askGrade">Grade<select id="askGrade"></select></label>
+        <label for="askSubject">Subject<select id="askSubject"></select></label>
+      </div>
+      <label for="askName">Your name <small>(optional)</small><input id="askName" type="text" maxlength="60" autocomplete="name" placeholder="e.g. Mona Hassan"></label>
+      <label for="askIntent">I would like to<select id="askIntent"><option value="info">Get more information</option><option value="buy">Get access to the app</option></select></label>
+      <p class="preview-lbl">Your message</p>
+      <p class="preview" id="askPreview"></p>
+      <a class="btn btn-wa btn-lg btn-block" id="askSend" href="#" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wa"/></svg>Send on WhatsApp</a>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/iee-logo.png" alt="International Education Egypt logo" width="96" height="96" loading="lazy">
+      <p>International Education Egypt builds interactive digital learning programs that help international school students study smarter.</p>
+      <div class="socials" id="socials"></div>
+    </div>
+    <nav aria-label="Quick links"><h4>Quick links</h4><a href="#home">Home</a><a href="#programs">Our Programs</a><a href="#features">Features</a><a href="#about">About Us</a><a href="#videos">Videos</a><a href="#contact">Contact Us</a></nav>
+    <nav aria-label="Grade 6 programs"><h4>Grade 6 programs</h4><div id="footG6"></div></nav>
+    <nav aria-label="Grade 8 programs"><h4>Grade 8 programs</h4><div id="footG8"></div></nav>
+  </div>
+  <div class="wrap foot-base">
+    <p>© <span id="year"></span> International Education Egypt. All rights reserved.</p>
+    <a data-wa="general" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" data-wa="general" href="#" target="_blank" rel="noopener" aria-label="Chat with International Education Egypt on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wa"/></svg><span>Chat with us</span>
+</a>
+
+<!-- Program showcase -->
+<div class="show" id="show" role="dialog" aria-modal="true" aria-labelledby="showTitle" hidden>
+  <div class="show-panel">
+    <div class="show-top">
+      <img class="show-logo" src="assets/iee-logo.png" alt="International Education Egypt" width="40" height="40">
+      <div class="show-grade" role="group" aria-label="Grade" id="showGrades"></div>
+      <div class="show-subj" role="group" aria-label="Subject" id="showSubjects"></div>
+      <button class="x" id="showClose" aria-label="Close program">×</button>
+    </div>
+    <div class="show-body" id="showBody"></div>
+    <div class="show-nav">
+      <button class="arrow" id="showPrev" aria-label="Previous program">‹</button>
+      <div class="pager" id="showDots"></div>
+      <button class="arrow" id="showNext" aria-label="Next program">›</button>
+    </div>
+  </div>
+</div>
+
+<!-- Video modal -->
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Program video" hidden>
+  <div class="vm-panel">
+    <button class="x" id="vmClose" aria-label="Close video">×</button>
+    <div class="vm-frame" id="vmFrame"></div>
+    <p class="vm-title" id="vmTitle"></p>
+  </div>
+</div>
+
+<!-- ============ ICON SPRITES ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ic-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.98L2 22l5.17-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.07.9.92-2.99-.2-.31a8.2 8.2 0 1 1 6.83 3.73Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.16.25-.63.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43l-.75-1.82c-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.73 2.73 0 0 0-.85 2.03 4.75 4.75 0 0 0 1 2.52 10.86 10.86 0 0 0 4.16 3.68c1.55.67 2.16.73 2.93.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.46-.28Z"/></symbol>
+
+  <!-- Subject illustrations (64x64) -->
+  <symbol id="sub-math" viewBox="0 0 64 64"><path d="M14 22l14-8 14 8v16l-14 8-14-8z" fill="#fff" opacity=".95"/><path d="M28 30l14-8v16l-14 8z" fill="#cfe0ff"/><path d="M14 22l14 8v16l-14-8z" fill="#e8f0ff"/><path d="M14 22l14-8 14 8-14 8z" fill="#fff"/><path d="M40 44l10-17 10 17z" fill="#ffd34d"/><text x="44" y="18" font-family="Outfit,sans-serif" font-weight="800" font-size="16" fill="#fff">π</text><path d="M6 52h14M13 45v14" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="sub-science" viewBox="0 0 64 64"><g fill="none" stroke="#fff" stroke-width="2.6"><ellipse cx="32" cy="32" rx="24" ry="9"/><ellipse cx="32" cy="32" rx="24" ry="9" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="24" ry="9" transform="rotate(-60 32 32)"/></g><circle cx="32" cy="32" r="6" fill="#ffd34d"/><circle cx="56" cy="32" r="3.2" fill="#fff"/><circle cx="20" cy="11.5" r="3.2" fill="#fff"/><circle cx="20" cy="52.5" r="3.2" fill="#fff"/></symbol>
+  <symbol id="sub-english" viewBox="0 0 64 64"><path d="M6 16c9-3 18-2 26 4v32c-8-6-17-7-26-4z" fill="#fff"/><path d="M58 16c-9-3-18-2-26 4v32c8-6 17-7 26-4z" fill="#ffe1e3"/><path d="M12 25c5-1 10 0 14 2M12 32c5-1 10 0 14 2M12 39c5-1 10 0 14 2" stroke="#E5303C" stroke-width="2" stroke-linecap="round" opacity=".6"/><text x="38" y="40" font-family="Outfit,sans-serif" font-weight="800" font-size="15" fill="#E5303C">Aa</text></symbol>
+  <symbol id="sub-social" viewBox="0 0 64 64"><circle cx="30" cy="32" r="22" fill="#fff"/><path d="M16 22c5 2 8 0 11 3s-1 7 3 9 7-2 9 2-2 9-6 10M34 12c-1 4 3 5 6 4s6 2 8 6" fill="none" stroke="#EF7D12" stroke-width="2.6" stroke-linecap="round"/><path d="M48 40l8 14-8-4-8 4z" fill="#ffd34d"/></symbol>
+  <symbol id="sub-german" viewBox="0 0 64 64"><path d="M8 12h40a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H26l-10 9v-9H8a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6z" fill="#fff"/><rect x="10" y="20" width="20" height="4" rx="1" fill="#1d1d1b"/><rect x="10" y="26" width="20" height="4" rx="1" fill="#DD0000"/><rect x="10" y="32" width="20" height="4" rx="1" fill="#FFCE00"/><text x="34" y="36" font-family="Outfit,sans-serif" font-weight="800" font-size="17" fill="#B88600">ü</text></symbol>
+  <symbol id="sub-arsocial" viewBox="0 0 64 64"><circle cx="46" cy="16" r="7" fill="#ffd34d"/><path d="M4 52 24 18l20 34z" fill="#fff"/><path d="M24 18l20 34H30z" fill="#cdeff2"/><path d="M34 52l14-22 14 22z" fill="#fff" opacity=".8"/><path d="M2 54h60" stroke="#fff" stroke-width="3" stroke-linecap="round"/><text x="14" y="47" font-family="Readex Pro,sans-serif" font-weight="600" font-size="13" fill="#0E9AA7">ج</text></symbol>
+  <symbol id="sub-arabic" viewBox="0 0 64 64"><rect x="6" y="10" width="52" height="44" rx="10" fill="#fff"/><text x="32" y="43" text-anchor="middle" font-family="Readex Pro,serif" font-weight="600" font-size="30" fill="#7A3FE0">ض</text><circle cx="50" cy="18" r="3" fill="#ffd34d"/></symbol>
+
+  <!-- Pillars (48x48) -->
+  <symbol id="pl-structure" viewBox="0 0 48 48"><rect x="6" y="6" width="16" height="16" rx="4" fill="#1E5BFF"/><rect x="26" y="6" width="16" height="16" rx="4" fill="#22C7E8"/><rect x="6" y="26" width="16" height="16" rx="4" fill="#22C7E8"/><rect x="26" y="26" width="16" height="16" rx="4" fill="#071A45"/></symbol>
+  <symbol id="pl-touch" viewBox="0 0 48 48"><circle cx="20" cy="18" r="12" fill="#22C7E8" opacity=".35"/><circle cx="20" cy="18" r="5" fill="#1E5BFF"/><path d="M20 18v18l5-4 4 9 4-2-4-8h7z" fill="#071A45"/></symbol>
+  <symbol id="pl-eye" viewBox="0 0 48 48"><path d="M4 24s8-13 20-13 20 13 20 13-8 13-20 13S4 24 4 24z" fill="#22C7E8" opacity=".4"/><circle cx="24" cy="24" r="8" fill="#1E5BFF"/><circle cx="27" cy="21" r="2.5" fill="#fff"/></symbol>
+  <symbol id="pl-practice" viewBox="0 0 48 48"><rect x="8" y="6" width="32" height="38" rx="5" fill="#071A45"/><path d="M15 17l3 3 6-6M15 29l3 3 6-6" fill="none" stroke="#22C7E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 18h6M28 30h6" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="pl-tech" viewBox="0 0 48 48"><rect x="4" y="9" width="40" height="26" rx="4" fill="#1E5BFF"/><rect x="8" y="13" width="32" height="18" rx="2" fill="#22C7E8" opacity=".5"/><path d="M16 40h16" stroke="#071A45" stroke-width="4" stroke-linecap="round"/><path d="M20 22l4-5 4 5-4 5z" fill="#fff"/></symbol>
+  <symbol id="pl-student" viewBox="0 0 48 48"><circle cx="24" cy="16" r="8" fill="#1E5BFF"/><path d="M8 42c2-10 9-14 16-14s14 4 16 14z" fill="#071A45"/><path d="M10 8l14-5 14 5-14 5z" fill="#22C7E8"/></symbol>
+
+  <!-- Steps -->
+  <symbol id="st-choose" viewBox="0 0 48 48"><rect x="5" y="7" width="16" height="16" rx="4" fill="#fff" opacity=".5"/><rect x="27" y="7" width="16" height="16" rx="4" fill="#fff"/><rect x="5" y="27" width="16" height="16" rx="4" fill="#fff" opacity=".5"/><rect x="27" y="27" width="16" height="16" rx="4" fill="#fff" opacity=".5"/><path d="M31 15l3 3 6-6" stroke="#1E5BFF" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="st-access" viewBox="0 0 48 48"><rect x="6" y="8" width="36" height="26" rx="4" fill="#fff"/><path d="M21 15v12l10-6z" fill="#1E5BFF"/><path d="M16 40h16" stroke="#fff" stroke-width="4" stroke-linecap="round"/></symbol>
+  <symbol id="st-grow" viewBox="0 0 48 48"><path d="M6 40h36" stroke="#fff" stroke-width="3" stroke-linecap="round"/><rect x="9" y="28" width="7" height="10" rx="2" fill="#fff" opacity=".55"/><rect x="20" y="20" width="7" height="18" rx="2" fill="#fff" opacity=".8"/><rect x="31" y="10" width="7" height="28" rx="2" fill="#fff"/></symbol>
+</svg>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
