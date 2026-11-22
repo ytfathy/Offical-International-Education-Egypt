@@ -350,6 +350,7 @@
     practice: '<path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 3v4h-4M6 21v-4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
     audio: '<path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
     glossary: '<path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="11.5" cy="10.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13.4 12.4l2.3 2.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+    game: '<path d="M6 8h12a4 4 0 0 1 4 4v2a3.5 3.5 0 0 1-6 2.4L14.5 15h-5L8 16.4A3.5 3.5 0 0 1 2 14v-2a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7 10.5v3M5.5 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="11" r="1.2" fill="currentColor"/><circle cx="18" cy="13.4" r="1.2" fill="currentColor"/>',
     friendly: '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 14a4.5 4.5 0 0 0 8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="9.5" r="1.3" fill="currentColor"/><circle cx="15" cy="9.5" r="1.3" fill="currentColor"/>'
   };
   $("#featList").innerHTML = Object.entries(C.featureLibrary).map(([k, f]) =>
@@ -391,7 +392,7 @@
   /* ---------------- Stats + testimonials ---------------- */
   const stats = C.stats && C.stats.length ? C.stats : [
     { value: C.grades.length, label: "Grade levels" },
-    { value: Math.max(...C.grades.map(g => PROGRAMS.filter(p => p.grade === g.key).length)), label: "Subjects per grade" },
+    { value: new Set(PROGRAMS.map(p => p.subject)).size, label: "Subjects" },
     { value: PROGRAMS.length, label: "Interactive programs" }
   ];
   $("#stats").innerHTML = stats.map(s => `<div class="stat"><b data-to="${+s.value}" data-suffix="${esc(s.suffix || "")}">${+s.value}${esc(s.suffix || "")}</b><span>${esc(s.label)}</span></div>`).join("");

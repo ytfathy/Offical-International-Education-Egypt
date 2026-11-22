@@ -52,7 +52,8 @@ window.IEE_CONFIG = {
     { key: "social",  name: "Social Studies", nameAr: "الدراسات الاجتماعية", color: "#EF7D12", icon: "social" },
     { key: "german",  name: "German",         nameAr: "اللغة الألمانية",  color: "#D9A200", icon: "german" },
     { key: "arabic",  name: "Arabic",         nameAr: "اللغة العربية",    color: "#7A3FE0", icon: "arabic" },
-    { key: "arsocial", name: "Arabic Social Studies", nameAr: "الدراسات الاجتماعية", color: "#0E9AA7", icon: "arsocial" }
+    { key: "arsocial", name: "Arabic Social Studies", nameAr: "الدراسات الاجتماعية", color: "#0E9AA7", icon: "arsocial" },
+    { key: "germangame", name: "German Game", nameAr: "لعبة الألماني", color: "#D6336C", icon: "germangame" }
   ],
 
   /* Master list of learning-experience features. Programs reference these keys. */
@@ -67,7 +68,8 @@ window.IEE_CONFIG = {
     practice:    { title: "Practice and revision",      text: "Extra practice to revise before tests and exams." },
     friendly:    { title: "Student-friendly interface", text: "A clean, simple layout students can use on their own." },
     audio:       { title: "Read-aloud audio",           text: "Hear words, sentences and lessons read aloud." },
-    glossary:    { title: "Searchable glossary",        text: "Key terms with clear definitions and examples." }
+    glossary:    { title: "Searchable glossary",        text: "Key terms with clear definitions and examples." },
+    game:        { title: "Learning game",              text: "Earn coins, unlock characters and explore worlds by answering questions." }
   },
 
   /* ---- PROGRAMS --------------------------------------------------------
@@ -122,6 +124,15 @@ window.IEE_CONFIG = {
       video: "assets/videos/g6-german.mp4",
       poster: "assets/videos/g6-german-poster.jpg",
       screenshots: ["assets/screens/g6-german-1.jpg", "assets/screens/g6-german-2.jpg", "assets/screens/g6-german-3.jpg"] },
+    { grade: "g6", subject: "germangame",
+      description: "Lauf und Lerne mit Malek! A 3D runner game for Grade 6 German: race through five worlds, from Cairo and Ancient Egypt to a Neon City, and answer 313 questions from four Arbeitsheft A2.1 lessons at checkpoints that pause the game, with Vorlesen audio.",
+      benefits: ["Practise German grammar and vocabulary while playing", "Take your time: the game pauses for every question", "Win +15 coins per right answer and unlock six 3D characters"],
+      // Features below are confirmed by the program's promotional video.
+      features: ["game", "quizzes", "audio", "interactive", "practice"],
+      appUrl: "https://lauf-and-lerne-grade-6.vercel.app/",
+      video: "assets/videos/g6-germangame.mp4",
+      poster: "assets/videos/g6-germangame-poster.jpg",
+      screenshots: ["assets/screens/g6-germangame-1.jpg", "assets/screens/g6-germangame-2.jpg", "assets/screens/g6-germangame-3.jpg"] },
     { grade: "g6", subject: "arabic",
       description: "Grade 6 Arabic with every question from the performance and assessments book made interactive: instant correction, a read-aloud lesson review, a smart exam builder and progress tracking.",
       benefits: ["Practise every question in the assessments book", "Know instantly whether each answer is right", "Build your own exam from the lessons you choose"],
@@ -176,11 +187,14 @@ window.IEE_CONFIG = {
       poster: "assets/videos/g8-german-poster.jpg",
       screenshots: ["assets/screens/g8-german-1.jpg", "assets/screens/g8-german-2.jpg", "assets/screens/g8-german-3.jpg"] },
     { grade: "g8", subject: "arabic",
-      description: "Grade 8 Arabic covering reading, grammar and expression with structured activities that deepen language mastery.",
-      benefits: ["Master grammar rules with clear practice", "Improve comprehension of longer texts", "Track improvement over time"],
-      features: ["interactive", "quizzes", "autocorrect", "feedback", "practice"],
+      description: "Grade 8 Arabic built entirely on the Ministry's assessments and performance book for Term 1: instant correction with a model explanation for every question, read-aloud texts, an infographic summary and vocabulary dictionary for each lesson, an exam generator and a progress dashboard by skill.",
+      benefits: ["Practise all 376 questions from the Ministry assessments book", "Get instant correction with a model explanation for every answer", "See mastery in each branch: grammar, reading, spelling and writing"],
+      // Features below are confirmed by the program's promotional video.
+      features: ["autocorrect", "feedback", "audio", "visual", "progress", "glossary", "quizzes"],
       appUrl: "https://arabic-g8.vercel.app/",
-      video: "", screenshots: [] }
+      video: "assets/videos/g8-arabic.mp4",
+      poster: "assets/videos/g8-arabic-poster.jpg",
+      screenshots: ["assets/screens/g8-arabic-1.jpg", "assets/screens/g8-arabic-2.jpg", "assets/screens/g8-arabic-3.jpg"] }
   ],
 
   /* Verified figures only. Leave empty to show the program counts (always true). */
