@@ -53,7 +53,8 @@ window.IEE_CONFIG = {
     { key: "german",  name: "German",         nameAr: "اللغة الألمانية",  color: "#D9A200", icon: "german" },
     { key: "arabic",  name: "Arabic",         nameAr: "اللغة العربية",    color: "#7A3FE0", icon: "arabic" },
     { key: "arsocial", name: "Arabic Social Studies", nameAr: "الدراسات الاجتماعية", color: "#0E9AA7", icon: "arsocial" },
-    { key: "germangame", name: "German Game", nameAr: "لعبة الألماني", color: "#D6336C", icon: "germangame" }
+    { key: "germangame", name: "German Game", nameAr: "لعبة الألماني", color: "#D6336C", icon: "germangame" },
+    { key: "quran", name: "Quran", nameAr: "القرآن الكريم", color: "#0B7A4B", icon: "quran" }
   ],
 
   /* Master list of learning-experience features. Programs reference these keys. */
@@ -142,6 +143,13 @@ window.IEE_CONFIG = {
       video: "assets/videos/g6-arabic.mp4",
       poster: "assets/videos/g6-arabic-poster.jpg",
       screenshots: ["assets/screens/g6-arabic-1.jpg", "assets/screens/g6-arabic-2.jpg", "assets/screens/g6-arabic-3.jpg"] },
+    { grade: "g6", subject: "quran",
+      description: "Grade 6 Quran as an interactive program for reading, listening and revising the required surahs.",
+      benefits: ["Listen to the required surahs", "Revise at your own pace", "Practise until you feel confident"],
+      // ⚠ Confirm description, benefits and features against the real app.
+      features: ["interactive", "audio", "practice"],
+      appUrl: "https://quran-grade-6.vercel.app/",
+      video: "", screenshots: [] },
 
     // GRADE 8
     { grade: "g8", subject: "math",
